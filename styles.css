@@ -1,0 +1,117 @@
+*{
+    border-style: box-border;
+}
+html{
+    font-size: 62.5%;
+    font-family: montserrat;
+}
+body{
+    min-width: 300px;
+}
+h1, h2, body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    background-color: red;
+    height: 7rem;
+    color: white;
+    
+}
+#navbar{
+    display: flex;
+    justify-content: right;
+    height: 100%;
+    align-items: center;
+}
+.container{
+    padding-inline: 2rem;
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.7rem;
+}
+#welcom-section{
+    height : 90vh;
+    background-color: black;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+}
+#welcom-section h1{
+    font-size: 5rem;
+}
+#welcom-section p{
+    font-size: 2rem;
+    margin-top: 0;
+    color: red;
+}
+#projects{
+    background-color: #45567d;
+    padding-top: 10rem; 
+    padding-bottom: 10rem;
+    text-align: center;
+}
+#projects h2{
+    font-size: 3rem;
+    color: white;
+}
+#projects button{
+    padding: 1.2rem;
+    font-size: 2rem;
+    margin-top: 7rem;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+#projects button{
+    transition: background .3s ease-out, padding-inline .3s ease-out;
+}
+#projects button:hover{
+    background: red;
+    padding-inline: 1.4rem;
+}
+#socials{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+    background-color: black;
+    color: white; 
+}
+#socials h1{
+    font-size: 5rem;
+}
+#socials p{
+    font-size: 1.7rem;
+}
+#socials a{
+    font-size: 2rem;
+    display: inline-block;
+}
+#socials a+a{
+    margin-left: 2rem; 
+    margin-bottom: 1.5rem;
+}
+@media (min-width: 600px){
+    .container{
+        padding-inline: 4rem;
+    }
+    hr{
+        width: 38%;
+    }
+    #socials a{
+        padding-top: 2rem;
+    }
+}
+@media (min-width: 1500px){
+    .project-title{
+        max-width: 1500px;
+    }
+}
